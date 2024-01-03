@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 9999;
+    /* border: 1px solid red; */
+    background-color: var(--clr-pink);
+}
+
+.header__menu,.header__logo {
+    display:none;
+}
+
+.header__link {
+    font-size: var(--size-xs);
+    text-decoration: none;
+    font-weight: 1000;
+    color: var(--clr-dark);
+    letter-spacing: .125em;    
+}
+
+.header__bar{
+    color: var(--clr-white);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    display: block;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+}
+
+/* md */
+@media (min-width: 768px) {
+    .header__menu {
+        display:flex;
+        align-items: center;
+        list-style: none;
+        /* border: 1px solid red; */
+        padding:0;
+        gap:2em;
+    }
+
+    .header__logo {
+        display: flex;
+        justify-content: left; 
+        font-size: var(--size-base);   
+    }
+
+    .header__sun {
+        display:block;
+        color:var(--clr-violet);
+        width:var(--size-base);
+        height:var(--size-base);
+    }
+
+    .header__bar {
+        display: none;
+    }  
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .header__menu {
+        display:flex;
+        align-items: center;
+        list-style: none;
+        /* border: 1px solid red; */
+        padding:0;
+        gap:2em;
+    }
+
+    .header__logo {
+        display: flex;
+        justify-content: left;
+        font-size: var(--size-xl);    
+    }
+
+    .btn {
+        font-size: var(--size-s);
+    }
+
+    .header__sun {
+        display:block;
+        width:var(--size-lg);
+        height:var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .header__menu {
+        display:flex;
+        align-items: center;
+        list-style: none;
+        /* border: 1px solid red; */
+        padding:0;
+        gap:2em;
+    }
+    .header__logo {
+        display: flex;
+        justify-content: left;   
+        font-size: var(--size-xl); 
+    }
+    .btn {
+        font-size: var(--size-base);
+    }
+
+    .header__sun {
+        display:block;
+        width:var(--size-xl);
+        height:var(--size-xl);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+
+}
