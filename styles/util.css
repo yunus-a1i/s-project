@@ -18,8 +18,7 @@
      0 10px 10px rgbargba(41, 39, 30, 0.2), 0 0 120px -10px var(--clr-Lpink);
      color:var(--clr-dark);
      background-color: var(--clr-Lpink);
-     border-radius: 25px;
-     
+     border-radius: 25px;     
 }
 .container {
     width: 100%;
